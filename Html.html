@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="fi">
+
 <head>
     <meta charset="UTF-8">
     <title>HTML</title>
 </head>
+
 <body>
+    <!--
     <h1>HTML</h1>
-    <p>Tässä meittin eka nettisivu, joka on paskempi kuin yläasteella tekemä</p>
+    <p>moi miika :D</p>
     <br>
     <img src="homer.png" width="200" height="200" alt="kuva">
     <table>
@@ -20,13 +23,57 @@
             <td>joo</td>
             <td>jaa</td>
         </tr>
-    </table>
-    <br>
+        -->
     <form action="koodi.php" method="post">
-        <label for="nimi">Nimi:</label><br>
-        <input type="text" id="enimi" name="enimi" value=""><br>
-        <label for="sukunimi">Sukunimi:</label><br>
-        <input type="text" name="sukunimi" id="snimi" name="snimi" value=""><br>
-        <input type="submit" value="Lähetä">    
+        <fieldset style="width: 40%;">
+            <legend>Contact infromation</legend>
+            <table>
+                <tr>
+                    <th></th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <td><label for="nimi">First name:</label></td>
+                    <td><input type="text" id="enimi" name="enimi"><label for="cmethod"> Preferred contact
+                            method:</label></td>
+                </tr>
+                <tr>
+                    <td><label for="sukunimi">Last name:</label></td>
+                    <td><input type="text" name="sukunimi" id="snimi"><input type="checkbox" name="email" id="email">
+                        <label for="email">Email</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email:</label></td>
+                    <td><input type="text" name="email" id="email"><input type="checkbox" name="telephone" id="tphone">
+                        <label for="telephone">Telephone</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="puhelin">Telephone:</label></td>
+                    <td><input type="text" name="puhelin" id="puhelin" value=""></td>
+                </tr>
+            </table>
+        </fieldset>
+        <fieldset style="width: 40%;">
+            <legend>Feedback</legend>
+            <table>
+                <tr>
+                    <td><label for="aihe">Message subject: </label><input type="text" name="aihe" id="aihe" value="">
+                    </td>
+                </tr>
+                <tr>
+                    <td><textarea name="message" rows="10" cols="50"></textarea></td>
+                </tr>
+                <tr>
+                    <td><label for="file">Attach a file: </label><input type="file" name="file" value=""></td>
+                </tr>
+                <tr>
+                    <td><input type="submit" value="Send"></td>
+                </tr>
+            </table>
+        </fieldset>
 </body>
+
 </html>
+</div>
