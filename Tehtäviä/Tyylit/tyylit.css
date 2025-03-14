@@ -1,5 +1,20 @@
 body {
-    background-color: lightgray;
-    width: 60%;
+    background-color: rgb(204, 187, 187);
+    width: 90%;
     margin: auto;
+
+    .content {
+        background-color: rgb(100, 124, 148);
+    }
+}
+
+th,
+td,
+table {
+    border: 1px solid black;
+}
+
+img {
+    width: auto;
+    height: 150px;
 }
