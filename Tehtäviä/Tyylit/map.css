@@ -1,0 +1,26 @@
+html,
+.body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(216, 214, 214);
+    width: 100%;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: stretch;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.content {
+    width: 95%;
+    max-width: 1800px;
+    overflow: auto;
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+.iFrame {
+    margin-top: 10px;
+    height: 100%;
+}
