@@ -10,7 +10,3 @@ function showMap() {
     iFrameElement.src = place;
     console.log("Map successfully loaded.", address, city, place);
 }
-
-function myFunction() {
-
-}

@@ -14,6 +14,17 @@
 </head>
 
 <body onload="init()">
+    <nav class="navbar fixed-top bg-primary">
+        <div class="container-fluid">
+            <span class="navbar-brand mb-0 h1">Karttanäkymä</span>
+            <a class="nav-link" href="map.html">Map</a>
+            <a class="nav-link" href="calculator.html">Calculator</a>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
     <div class="content">
         <h1>Karttanäkymä</h1>
         <iframe id="map-frame" src="https://www.google.com/maps?q=Yliopistonkatu36Lappeenranta&output=embed"
