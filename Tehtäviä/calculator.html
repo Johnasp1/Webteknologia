@@ -31,14 +31,18 @@
         <h1>Laskin</h1>
         <i class="bi bi-info-circle"></i>
         <div class="input-group mb-3">
-            <input type="number" class="form-control" id="number1">
+            <button type="button" class="btn btn-primary" id="dec-button" onclick="decrease('number1')">-</button>
+            <input type="text" class="form-control" id="number1">
+            <button type="button" class="btn btn-primary" id="inc-button" onclick="increase('number1')">+</button>
             <select class="form-select" aria-label="Default select example" id="operator">
                 <option value="+">+</option>
                 <option value="-">-</option>
                 <option value="/">/</option>
                 <option value="*">*</option>
             </select>
-            <input type="number" class="form-control" id="number2">
+            <button type="button" class="btn btn-primary" id="dec-button" onclick="decrease('number2')">-</button>
+            <input type="text" class="form-control" id="number2">
+            <button type="button" class="btn btn-primary" id="inc-button" onclick="increase('number2')">+</button>
         </div>
         <button class="button" onclick="calculate()" id="calculateButton">Laske</button>
         <p id="result"></p>

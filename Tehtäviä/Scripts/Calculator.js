@@ -2,6 +2,17 @@ function init() {
     document.getElementById("number1").value = Math.floor(Math.random() * 10) + 1;
     document.getElementById("number2").value = Math.floor(Math.random() * 10) + 1;
 }
+function decrease(fieldId) {
+    let inputField = document.getElementById(fieldId);
+    let currentValue = parseInt(inputField.value) || 0;
+    inputField.value = currentValue - 1;
+}
+
+function increase(fieldId) {
+    let inputField = document.getElementById(fieldId);
+    let currentValue = parseInt(inputField.value) || 0;
+    inputField.value = currentValue + 1;
+}
 
 function calculate() {
     let num1 = parseInt(document.getElementById("number1").value);
