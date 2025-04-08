@@ -20,6 +20,11 @@ function calculate() {
     let operator = document.getElementById("operator").value;
     let result;
 
+    if (isNaN(num1) || isNaN(num2)) {
+        alert("Please enter valid numbers");
+        return;
+    }
+
     switch (operator) {
         case '+':
             result = num1 + num2;
