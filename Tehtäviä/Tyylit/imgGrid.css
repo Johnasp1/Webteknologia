@@ -4,6 +4,7 @@ body {
   padding: 0;
   background-color: rgb(216, 214, 214);
   width: 100%;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -11,22 +12,11 @@ body {
 }
 
 .content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  /* Center the content horizontally */
-  gap: 20px;
-  /* Add spacing between elements */
-  max-width: 800px;
-  /* Set a maximum width for the container */
-  width: 100%;
-  /* Allow the container to shrink if needed */
+  max-width: 100%;
+  width: 800px;
   margin: 30px auto;
-  /* Center the container on the page */
   padding: 20px;
-  /* Add padding for spacing */
   text-align: center;
-  /* Center-align the text inside the container */
 }
 
 .grid-container {

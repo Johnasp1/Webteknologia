@@ -5,7 +5,14 @@ function getData() {
 
     fetch("https://api.chucknorris.io/jokes/random") // Fetch data from the API
         .then(function (response) {
-            return response.json(); // Parse the response as JSON
+            const button = document.querySelector(".btn-primary");
+            const jokeId = button.innerHTML;
+            button.innerHTML = `<i id="hae"></i>`;
+            setTimeout(() => {
+                button.innerHTML = jokeId;
+            }, 1000);
+            document.getElementById("hae").innerHTML = `<span class="spinner-grow text-dark" role="status"></span>`;
+            return response.json();
         })
         .then(function (result) {
             // Dynamically create the accordion item with the joke in the accordion-body
@@ -20,7 +27,7 @@ function getData() {
                 `<div id="flush-collapse` + counter + `" class="accordion-collapse collapse" aria-labelledby="flush-heading` + counter +
                 `" data-bs-parent="#accordionFlushExample">` +
                 `<div class="accordion-body">` +
-                result.value + // Insert the joke here
+                result.value +
                 `</div>` +
                 `</div>` +
                 `</div>`;
