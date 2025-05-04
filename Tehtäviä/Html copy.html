@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fi">
+
+<head>
+    <meta charset="UTF-8">
+    <title>HTML</title>
+    <link rel="stylesheet" href="Tyylit/Lomake.css">
+</head>
+
+<body>
+    <h1>HTML Lomake</h1>
+    <form action="koodi.php" method="post">
+        <fieldset class="contact-info">
+            <legend>Contact Information</legend>
+            <div class="form-group">
+                <label for="enimi">First name:</label>
+                <input type="text" id="enimi" name="enimi">
+                <label for="cmethod" class="right-label">Preferred contact method:</label>
+            </div>
+            <div class="form-group">
+                <label for="snimi">Last name:</label>
+                <input type="text" id="snimi" name="sukunimi">
+                <input type="checkbox" id="email-checkbox" name="preferred_contact" value="email">
+                <label for="email-checkbox" class="right-label">Email</label>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email">
+                <input type="checkbox" id="telephone-checkbox" name="preferred_contact" value="telephone">
+                <label for="telephone-checkbox" class="right-label">Telephone</label>
+            </div>
+            <div class="form-group">
+                <label for="puhelin">Telephone:</label>
+                <input type="text" id="puhelin" name="puhelin">
+            </div>
+        </fieldset>
+
+        <fieldset class="feedback">
+            <legend>Feedback</legend>
+            <div class="form-group">
+                <label for="aihe">Message subject:</label>
+                <input type="text" id="aihe" name="aihe">
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" cols="50"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="file">Attach a file:</label>
+                <input type="file" id="file" name="file">
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Send">
+            </div>
+        </fieldset>
+    </form>
+</body>
+
+</html>
+</div>

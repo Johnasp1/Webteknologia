@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #444;
+    margin-bottom: 20px;
+}
+
+form {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+fieldset {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.contact-info {
+    background-color: #d1ecf1;
+}
+
+.feedback {
+    background-color: #d1ecf1;
+}
+
+legend {
+    font-weight: bold;
+    color: #555;
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+label {
+    flex: 0 0 100px;
+    font-weight: bold;
+    margin-right: 10px;
+    text-align: left;
+}
+
+input[type="text"] {
+    flex: 0 0 500px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="checkbox"] {
+    margin-left: 10px;
+}
+
+.right-label {
+    margin-left: 10px;
+    flex: 0;
+    text-align: left;
+}
+
+input[type="submit"] {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
